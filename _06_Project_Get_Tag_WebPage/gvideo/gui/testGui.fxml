@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gvideo.gui.TestController">
+   <center>
+      <SplitPane fx:id="splitPane" dividerPositions="0.2391304347826087, 0.5" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <ListView fx:id="sourceList" prefHeight="200.0" prefWidth="200.0" />
+            <ListView fx:id="videoList" prefHeight="200.0" prefWidth="200.0" />
+            <BorderPane fx:id="videoParent" prefHeight="398.0" prefWidth="348.0" />
+         </items>
+      </SplitPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" onAction="#addSource" text="Source">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Add...">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="N" control="UP" meta="DOWN" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="View">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#showOrHideLists" text="Show/Hide lists">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Y" control="UP" meta="DOWN" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+              </items>
+               <accelerator>
+                  <KeyCodeCombination alt="UP" code="L" control="UP" meta="DOWN" shift="UP" shortcut="UP" />
+               </accelerator>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

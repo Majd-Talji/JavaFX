@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" prefHeight="400.0" prefWidth="600.0" fx:controller="_01_Basis._04_FXML._03_Initialize_Binding_Reusable_Components.Controller">
+    <Label text="I love Alaa" fx:id="firstLabel"  />
+    <Label text="${firstLabel.text}" />
+    
+    <fx:define>
+        <ToggleGroup fx:id="toggleGroup"  />
+    </fx:define>
+    
+    <Label text="Difficulty" />
+    
+    <RadioButton text="Easy" toggleGroup="$toggleGroup" />
+    <RadioButton text="Medium" toggleGroup="$toggleGroup" />
+    <RadioButton text="Hard" toggleGroup="$toggleGroup" />
+</VBox>

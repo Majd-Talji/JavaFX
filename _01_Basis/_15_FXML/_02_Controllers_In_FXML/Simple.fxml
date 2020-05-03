@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" prefHeight="400.0" prefWidth="600.0" fx:controller="_01_Basis._04_FXML._02_Controllers_In_FXML.Controller">
+    <children>
+        <Label text="I love Alaa" />
+        <Button fx:id="button"  mnemonicParsing="false" text="Submit" onAction="#clickedButton"  />
+    </children>
+</VBox>

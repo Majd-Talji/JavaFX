@@ -1,0 +1,9 @@
+/* Majd Talji */
+.color-picker {
+    -fx-background-color: #669999;
+    -fx-background-radius: 0 15 15 0;
+}
+
+.color-picker .color-picker-label .text {
+    -fx-fill: #ccffcc;
+}
